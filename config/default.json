@@ -1,7 +1,7 @@
 {
   "server": {
-    "host": "localhost",
-    "port": 8080,
+    "host": "https://nativo-bike-api.herokuapp.com/",
+    "port": 80,
     "searchEngine": "elasticsearch",
     "useOutputCacheTagging": false,
     "useOutputCache": false,
@@ -9,7 +9,7 @@
     "availableCacheTags": ["P", "C", "T", "A", "product", "category", "attribute", "taxrule"],
     "invalidateCacheKey": "aeSu7aip",
     "invalidateCacheForwarding": false,
-    "invalidateCacheForwardUrl": "http://localhost:3000/invalidate?key=aeSu7aip&tag="
+    "invalidateCacheForwardUrl": "https://nativo-bike-api.herokuapp.com/invalidate?key=aeSu7aip&tag="
   },
   "orders": {
     "useServerQueue": false
@@ -18,9 +18,9 @@
     "excludeDisabledProducts": false
   },
   "elasticsearch": {
-    "host": "localhost",
-    "port": 9200,
-    "protocol": "http",
+    "host": "https://f543b1f98bec4043b1200b35482dfefb.us-east-1.aws.found.io",
+    "port": 9243,
+    "protocol": "https",
     "min_score": 0.01,
     "indices": [
       "vue_storefront_catalog",
@@ -39,7 +39,7 @@
     "apiVersion": "5.6"
   },
   "redis": {
-    "host": "localhost",
+    "host": "ec2-3-82-83-129.compute-1.amazonaws.com",
     "port": 6379,
     "db": 0,
     "auth": false
