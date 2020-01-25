@@ -8,6 +8,7 @@ import { loadAdditionalCertificates } from './helpers/loadAdditionalCertificates
 import api from './api';
 import config from 'config';
 import img from './api/img';
+import 'babel-polyfill';
 import invalidateCache from './api/invalidate'
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
