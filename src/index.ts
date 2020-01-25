@@ -50,7 +50,7 @@ initializeDb(db => {
 
   const port = process.env.PORT || config.get('server.port')
   const host = process.env.HOST || config.get('server.host')
-  app.listen(parseInt(port), host, () => {
+  app.server.listen(parseInt(port), host, () => {
     console.log(`Vue Storefront API started at http://${host}:${port}`);
   });
 });
